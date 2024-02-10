@@ -1,0 +1,457 @@
+/* 
+Theme Name:hy5
+Version:1.0
+Author:YUKI
+Descrption:このテーマはhy5専用のテーマです
+ */
+
+/* common */
+button {
+  background-color: transparent;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  color: #33363b;
+  transition: .3s;
+}
+
+a:hover {
+  color: rgba(54,140,191,1);
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;;
+}
+
+.en {
+  font-family: 'Catamaran', sans-serif;
+}
+
+/* スマホ */
+.pc {
+  display: none;
+}
+
+body {
+  font-size: 14px;
+  color: #33363b;
+}
+
+h1 {
+  font-size: 24px;
+  padding: 40px 0;
+  text-align: center;
+}
+
+section {
+  padding-bottom: 40px;
+}
+
+/* ヘッダー */
+.sp-menu {
+  opacity: 0;
+  user-select: none;
+  transform: translateX(10px);
+  transition: .3s;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 20;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.sp-menu a {
+  display: block;
+}
+
+.sp-menu ul {
+  margin-top: 56px;
+  padding: 0 32px;
+}
+
+.sp-menu ul li {
+  font-size: 18px;
+  padding: 8px 0;
+  border-bottom: 2px solid rgba(126,188,89,1);
+  cursor: pointer;
+}
+
+.sp-menu.show {
+  opacity: 1;
+  transform: none;
+  pointer-events: all;
+}
+
+#close i {
+  color: #33363b;
+}
+
+.sp-menu i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: rgba(126,188,89,1);
+}
+
+header.sp {
+  height: 56px;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 20;
+  transition: .3s;
+}
+
+header.sp.scrolled {
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 2px 2px 8px rgb(204, 203, 203);
+  border-radius: 0 0 8px 8px;
+}
+
+header.sp nav {
+  display: flex;
+  justify-content: space-between;
+  line-height: 56px;
+}
+
+.burger {
+  font-size: 32px;
+  transition: .3s;
+  opacity: 0;
+}
+
+#open {
+  position: relative;
+}
+
+#close {
+  position: absolute;
+  top: 0;
+  right: 12px;
+}
+
+.burger.show {
+  opacity: 1;
+}
+
+
+/* TOP */
+.top img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.top {
+  position: relative;
+}
+
+.top-msg {
+  width: 250px;
+  height: 140px;
+  background-color: rgba(126,188,89,.9);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.top-msg .container {
+  position: relative;
+  width: 250px;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0;
+}
+
+.top-msg h2 {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+  margin-bottom: 0;
+  padding-bottom: 8px;
+}
+
+.top-msg p {
+  text-align: center;
+  font-style: italic;
+  margin-bottom: 0;
+  padding-top: 8px;
+}
+
+/* 事業内容 */
+.service {
+  height: 250px;
+  position: relative;
+  color: #fff;
+  width: 90%;
+  margin: 0 auto 24px;
+  cursor: pointer;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.service:last-child{
+  margin-bottom: 0;
+}
+
+.detail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  user-select: none;
+  background-size: cover;
+  transition: .3s;
+}
+
+.detail.appear {
+  opacity: 1;
+  transform: none;
+  user-select: all;
+}
+
+.detail::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.detail:nth-of-type(2) {
+  background-color: transparent;
+}
+
+
+.sd {
+  background-image: url(img/helpdesk.jpg);
+}
+
+.infra {
+  background-image: url(img/infra.jpg);
+  background-position: center;
+}
+
+.translate {
+  background-image: url(img/translate_new.jpg);
+  background-position: right;
+}
+
+.detail.appear {
+  pointer-events: none;
+}
+
+.detail p {
+  font-size: 16px;
+}
+
+.detail .container{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 5;
+}
+
+.item i {
+  font-size: 80px;
+  text-align: center;
+  display: block;
+  padding-top: 30px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 18px;
+  padding-top: 8px;
+}
+
+/* 企業理念 */
+#pholosophy h2 {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #ddd;
+  font-size: 18px;
+  border-left: 3px solid rgba(126,188,89,.9);
+  padding-left: 8px;
+  max-width: 800px;
+}
+
+#pholosophy {
+  padding-bottom: 0px;
+}
+
+.beliefs h3 {
+  padding: 24px 0 12px;
+}
+
+dl {
+  max-width: 800px;
+  margin: 4px auto;
+}
+
+dt {
+  padding: 8px 0;
+  background-color: #f4f4f4;
+  cursor: pointer;
+  user-select: none;
+  font-weight: normal;
+}
+
+.bi-caret-right-fill {
+  color: rgba(126,188,89,1);
+  transition: transform 0.3s;
+  font-size: 20px;
+  display: inline-block;
+}
+
+dd {
+  background-color: #f4f4f4;
+  padding: 8px;
+  display: none;
+  animation: .3s fadeIn;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+dl.appear dt {
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+dl.appear dd {
+  display: block;
+}
+
+dl.appear .bi-caret-right-fill {
+  transform: rotate(90deg);
+}
+
+td, th {
+  vertical-align: top;
+}
+
+table {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* お問い合わせ */
+.info {
+  display: block;
+}
+
+.info div {
+  border: 1px solid rgba(126,188,89,1);
+  text-align: center;
+  padding: 24px 0;
+  width: 70%;
+  margin: 0 auto 16px;
+  border-radius: 8px;
+  height: 120px;
+}
+
+.info p {
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+.info p:first-child {
+  margin-bottom: 8px;
+}
+
+.info i {
+  font-size: 24px;
+  color: rgba(126,188,89,1);
+  padding-right: 8px;
+}
+
+.info span {
+  font-size: 18px;
+}
+
+.line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.mail a {
+  transition: .3s;
+}
+
+.mail a:hover {
+  color: rgba(54,140,191,1);
+}
+
+/* footer */
+footer {
+  border-top: 1px solid #ddd;
+  padding: 32px 0;
+  margin-top: 50px;
+  background-color: rgba(126,188,89,1);
+  color: #fff;
+}
+
+footer .container {
+  text-align: center;
+}
+
+footer a {
+  transition: .3s;
+  color: #fff;
+}
+
+footer a:hover {
+  color: rgba(54,140,191,1);
+}
+
+footer p:first-child {
+  padding-bottom: 8px;
+}
+
+footer p:nth-child(2) {
+  font-size: 12px;
+}
+
+#to_top {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  opacity: 0;
+  transition: .3s;
+}
+
+#to_top.scrolled {
+  opacity: 1;
+}
+
+#to_top i {
+  font-size: 32px;
+  color: rgba(126,188,89,1);
+}
+
+

@@ -1,0 +1,241 @@
+/* midium screen */
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 28px;
+    padding: 90px 0 50px;
+  }
+  
+  header.sp {
+    height: 64px;
+  }
+
+  header.sp nav {
+    line-height: 64px;
+  }
+
+  .burger {
+    font-size: 40px;
+  }
+
+  nav img {
+    height: 50px;
+  }
+
+  .top img {
+    height: 400px;
+  }
+
+  .top-msg {
+    width: 300px;
+    height: 180px;
+  }
+
+  .top-msg .container {
+    width: 300px;
+    height: 180px;
+  }
+
+  .top-msg h2 {
+    padding-bottom: 12px;
+  }
+
+  .top-msg p {
+    padding-top: 12px;
+  }
+
+  .service {
+    height: 250px;
+    width: 70%;
+    margin: 0 auto 24px;
+    cursor: pointer;
+    z-index: 0;
+    overflow: hidden;
+    max-width: 800px;
+  }
+
+  #pholosophy h2 {
+    text-align: center;
+    font-size: 24px;
+    text-decoration: none;
+    border-left: none;
+    padding-left: 0px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid rgba(126,188,89,.9);
+    box-shadow: 4px rgba(126,188,89,.3);
+    display: block;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .beliefs h3 {
+    font-size: 20px;
+    padding-top: 40px;
+  }
+
+  dl {
+    max-width: 800px;
+    margin: 12px auto;
+  }
+
+  dt {
+    padding: 12px 0;
+  }
+
+  .bi-caret-right-fill {
+    font-size: 24px;
+  }
+
+  dd {
+    padding: 16px;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  footer {
+    margin-top: 70px;
+  }
+
+  footer a {
+    font-size: 16px;
+  }
+
+  #to_top i {
+    font-size: 40px;
+    color: rgba(126,188,89,1);
+  }
+
+  .info div {
+    width: 90%;
+  }
+}
+  
+  /* large screen */
+  @media (min-width: 800px) {
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .service {
+      height: 250px;
+      width: 95%;
+    }
+  }
+
+  @media (min-width: 1025px) {
+    body {
+      font-size: 20px;
+    }
+  
+    h1 {
+      font-size: 40px;
+      padding: 100px 0 50px;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .service {
+      height: 300px;
+    }
+
+    .sp {
+      display: none;
+    }
+
+    .pc {
+      display: block;
+      position: fixed;
+      width: 100%;
+      height: 90px;
+      z-index: 20;
+      background-color: rgba(255, 255, 255, 1);
+      box-shadow: 2px 4px 8px rgb(204, 203, 203);
+      border-radius: 0 0 16px 16px;
+      font-size: 18px;
+    }
+
+    .pc nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 90px;
+    }
+
+    .pc ul {
+      display: flex;
+      text-align: center;
+      height: 90px;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+
+    .pc ul li {
+      width: 120px;
+      transition: .3s;
+    }
+
+    .pc li:hover a {
+      color: rgba(54,140,191,1);
+    }
+
+    .pc li:hover i {
+      color: rgba(54,140,191,1);
+    }
+
+    .pc i {
+      font-size: 30px;
+      color: rgba(126,188,89,1);
+      transition: .3s;
+    }
+
+    .item i {
+      font-size: 100px;
+      text-align: center;
+      display: block;
+      padding-top: 40px;
+    }
+
+    .top img {
+      height: 100vh;
+    }
+
+    .top-msg {
+      width: 400px;
+      height: 300px;
+    }
+    
+    .top-msg .container {
+      width: 400px;
+      height: 300px;
+    }
+
+    .top-msg h2 {
+      font-size: 36px;
+      width: 350px;
+      padding-bottom: 16px;
+    }
+
+    .top-msg p {
+      font-size: 24px;
+      padding-top: 16px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    .detail p {
+      font-size: 18px;
+    }
+  }
